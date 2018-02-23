@@ -7,9 +7,9 @@ require 'typhoeus'
 require 'date'
 require 'yaml'
 
-#ScraperWiki.sqliteexecute('CREATE TABLE `data` (`url` text, `uid` text, `date_scraped` text,`start_date` text)')
-#ScraperWiki.sqliteexecute('CREATE INDEX date_scraped ON data (date_scraped)')
-#exit
+ScraperWiki.sqliteexecute('CREATE TABLE `data` (`url` text, `uid` text, `date_scraped` text,`start_date` text)')
+ScraperWiki.sqliteexecute('CREATE INDEX date_scraped ON data (date_scraped)')
+exit
 
 BASE_URL = 'http://www.southoxon.gov.uk/ccm/support/'
 
